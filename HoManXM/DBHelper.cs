@@ -12,7 +12,7 @@ namespace HoManXM
     class DBHelper
     {
         private static string connStr = "Data Source=.;Initial Catalog=HoManDB;Integrated Security=True";
-        //链接数据库
+        //链接数据库 123
         public static SqlConnection GetConn()
         {
             SqlConnection conn = new SqlConnection(connStr);
