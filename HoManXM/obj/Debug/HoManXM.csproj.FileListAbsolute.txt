@@ -40,3 +40,8 @@ F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.Ji.resources
 F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.Ce.resources
 F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.RuZhuYu.resources
 F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.csprojAssemblyReference.cache
+F:\酒店管理\HoManXM\HoManXM\bin\Debug\HoManXM.exe.manifest
+F:\酒店管理\HoManXM\HoManXM\bin\Debug\HoManXM.application
+F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.TrustInfo.xml
+F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.exe.manifest
+F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.application
