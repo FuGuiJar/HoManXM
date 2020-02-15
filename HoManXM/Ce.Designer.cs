@@ -77,11 +77,10 @@
             this.panel1.Controls.Add(this.txtMiMa);
             this.panel1.Controls.Add(this.lab);
             this.panel1.Controls.Add(this.btnOK);
-            this.panel1.Location = new System.Drawing.Point(7, 4);
+            this.panel1.Location = new System.Drawing.Point(12, 7);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(466, 196);
             this.panel1.TabIndex = 3;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox1
             // 
@@ -98,7 +97,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(477, 203);
+            this.ClientSize = new System.Drawing.Size(485, 211);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

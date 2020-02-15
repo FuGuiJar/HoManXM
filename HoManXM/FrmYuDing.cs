@@ -146,11 +146,23 @@ namespace HoManXM
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            RuZhuYu ruZhvu = new RuZhuYu();
-            ruZhvu.Yn = true;
-            ruZhvu.FangHao = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-            ruZhvu.Fang = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-            ruZhvu.Show();
+            string shouj = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+            if (shouj == "预定")
+            {
+                Frmshouji shouji = new Frmshouji();
+                shouji.shouji = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                shouji .FangHao = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                shouji.Fang = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                RuZhuYu ruZhvu = new RuZhuYu();
+                ruZhvu.Yn = true;
+                shouji.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("不可入住");
+            }
+           
+           
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
