@@ -19,7 +19,7 @@ namespace HoManXM
         }
         private void YuDingBiDui_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(Hao);
+            //MessageBox.Show(Hao);
         }
         private void btnQuXiao_Click(object sender, EventArgs e)
         {
@@ -52,8 +52,11 @@ namespace HoManXM
             if (reader.Read())
             {
                 RuZhuYu zhu = new RuZhuYu();
+                zhu.Yn = true;
+                zhu.FangHao = reader[5].ToString();
                 PublicClass.Name = reader[1].ToString();
                 PublicClass.Fjian = reader[5].ToString();
+                //MessageBox.Show(PublicClass.Name +"--"+PublicClass.Fjian);
                 zhu.ShowDialog();
                 string sqlGai = $"update reserve set reserve_ZhuangTai = 2 where reserve_bianhao = {Hao}";
                 DBHelper.ExecuteNonQuery(sqlGai);

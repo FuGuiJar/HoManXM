@@ -59,19 +59,19 @@ namespace HoManXM
         private void ChuShiHua()
         {
             #region 问题
- //           select r.room_id,l.roomLei_LeiBie,l.roomLei_jiaGe,t.roomTai_zhuangTai,YaJin.YaJin
- //from  room as r
+            //           select r.room_id,l.roomLei_LeiBie,l.roomLei_jiaGe,t.roomTai_zhuangTai,YaJin.YaJin
+            //from  room as r
 
- //     inner join roomLei as l on(r.room_LeiBie = l.roomLei_id)
+            //     inner join roomLei as l on(r.room_LeiBie = l.roomLei_id)
 
- //     inner join roomTai as t on(r.room_zhuangTai = t.roomTai_id)
+            //     inner join roomTai as t on(r.room_zhuangTai = t.roomTai_id)
 
- //     inner join YaJin on(l.roomLei_id = YaJin.YaJin_id)
- //     where r.room_id = { Convert.ToInt32(FangHao)}
+            //     inner join YaJin on(l.roomLei_id = YaJin.YaJin_id)
+            //     where r.room_id = { Convert.ToInt32(FangHao)}
             #endregion
             //MessageBox.Show(FangHao);
             string sql = $@"select * from reserve inner join room on(room.room_id=reserve.reserve_fanghao)
-                            where  reserve.reserve_fanghao={FangHao}";
+                            where  reserve.reserve_fanghao= {FangHao}";
 
             cboFanghao.SelectedItem = FangHao;
             SqlDataReader reader = DBHelper.ExecutReader(sql);

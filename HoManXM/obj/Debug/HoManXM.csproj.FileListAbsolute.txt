@@ -40,3 +40,4 @@ F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.Ji.resources
 F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.Ce.resources
 F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.RuZhuYu.resources
 F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.Frmshouji.resources
+F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.csprojAssemblyReference.cache

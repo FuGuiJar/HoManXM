@@ -98,8 +98,8 @@ namespace HoManXM
             int a = DBHelper.ExecuteNonQuery(sql);
             if (a > 0)
             {
-    
-                RuZhu zhu =new RuZhu();
+
+                RuZhu zhu = new RuZhu();
                 int i = zhu.TiJiaoDingDan();
 
                 string sqlhao = $@"select top 1 checkin.checkin_id from
@@ -110,8 +110,8 @@ namespace HoManXM
                 SqlDataReader readerh = DBHelper.ExecutReader(sqlhao);
                 if (readerh.Read())
                 {
-                string sql2 = $"insert into XiaoFei values({Convert.ToInt32(PublicClass.FangH)},{Convert.ToInt32(readerh[0])},'0',0,0,0,'已付款','{DateTime.Now}')";
-                DBHelper.ExecuteNonQuery(sql2);
+                    string sql2 = $"insert into XiaoFei values({Convert.ToInt32(PublicClass.FangH)},{Convert.ToInt32(readerh[0])},'0',0,0,0,'已付款','{DateTime.Now}')";
+                    DBHelper.ExecuteNonQuery(sql2);
                 }
                 readerh.Close();
                 SqlDataReader readertai = DBHelper.ExecutReader(sqlhao);
@@ -138,6 +138,9 @@ namespace HoManXM
                     reader1.Close();
                 }
 
+                PublicClass.To = false;
+                PublicClass.ShenFu = null;
+                PublicClass.NmaeFu = null;
                 this.Close();
                 zhu.Close();
             }

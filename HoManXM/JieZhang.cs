@@ -91,9 +91,12 @@ namespace HoManXM
                 readerShen.Close();
 
                 //MessageBox.Show(reader[9].ToString()+"---"+reader[4].ToString());
-                double i = (int)((Convert.ToDouble(reader[9].ToString()) - Convert.ToDouble(reader[4].ToString())) * Convert.ToDouble(domainUpDown1.Text) + Convert.ToDouble(txtXiaoFei.Text)) * zhe;
+                //double i = 1;
+                //double c = i * Convert.ToDouble(domainUpDown1.Text) + Convert.ToDouble(txtXiaoFei.Text) * zhe;
+                MessageBox.Show(i.ToString());
+                MessageBox.Show(c.ToString());
                 //txtJiFen.Text = i.ToString("0.0");
-                txtJiFen.Text = i.ToString();
+                txtJiFen.Text = c.ToString();
                  //= reader[10].ToString();
                
                 //(Convert.ToDouble(txtYiJiao.Text) + Convert.ToDouble(txtXiaoFei.Text)).ToString();
