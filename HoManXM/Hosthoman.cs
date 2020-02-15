@@ -54,7 +54,7 @@ namespace HoManXM
             JinYong();
             //无取消栏
             // this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            //TianQi();
+            TianQi();
             //初始化房间信息
             FuXinXi();
             //BackColor = Color.FromArgb(255, 66, 64);

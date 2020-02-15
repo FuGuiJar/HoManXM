@@ -90,11 +90,30 @@ namespace HoManXM
                 }
                 readerShen.Close();
 
-                //MessageBox.Show(reader[9].ToString()+"---"+reader[4].ToString());
-                //double i = 1;
-                //double c = i * Convert.ToDouble(domainUpDown1.Text) + Convert.ToDouble(txtXiaoFei.Text) * zhe;
-                MessageBox.Show(i.ToString());
-                MessageBox.Show(c.ToString());
+                string jai = string.Empty;
+                //MessageBox.Show(ToString()+"---"+reader[4].ToString());
+                double i = Convert.ToDouble(reader[9]) - Convert.ToDouble(reader[4]);
+                string sqlqq = $@"select roomLei.roomLei_jiaGe from 
+	room inner join roomLei
+	on(room.room_LeiBie = roomLei.roomLei_id)
+	where room_id = {txtFangJian.Text}";
+                SqlDataReader readerqq = DBHelper.ExecutReader(sqlqq);
+                if (readerqq.Read())
+                {
+                    jai = readerqq[0].ToString();
+                }
+                readerqq.Close();
+                double c = 0.0;
+                if (domainUpDown1.Text == "1")
+                {
+                    c =(i + Convert.ToDouble(txtXiaoFei.Text)) *zhe;
+                }
+                else
+                {
+                     c = (Convert.ToDouble(jai) * (Convert.ToDouble(domainUpDown1.Text) -1) + i + Convert.ToDouble(txtXiaoFei.Text)) *zhe;
+                }
+                //MessageBox.Show(i.ToString());
+                //MessageBox.Show(c.ToString());  
                 //txtJiFen.Text = i.ToString("0.0");
                 txtJiFen.Text = c.ToString();
                  //= reader[10].ToString();
