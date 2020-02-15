@@ -106,7 +106,7 @@ namespace HoManXM
                 double c = 0.0;
                 if (domainUpDown1.Text == "1")
                 {
-                    c =(i + Convert.ToDouble(txtXiaoFei.Text)) *zhe;
+                    c = (i + Convert.ToDouble(txtXiaoFei.Text)) *zhe;
                 }
                 else
                 {
@@ -115,7 +115,7 @@ namespace HoManXM
                 //MessageBox.Show(i.ToString());
                 //MessageBox.Show(c.ToString());  
                 //txtJiFen.Text = i.ToString("0.0");
-                txtJiFen.Text = c.ToString();
+                txtJiFen.Text = c.ToString("0.00");
                  //= reader[10].ToString();
                
                 //(Convert.ToDouble(txtYiJiao.Text) + Convert.ToDouble(txtXiaoFei.Text)).ToString();
@@ -161,7 +161,7 @@ where memberuser.memberuser_shenfen = '{reader[2].ToString()}'
                         else
                         {
                             double num = Convert.ToDouble(readerFangJia[2].ToString()) * Convert.ToDouble(domainUpDown1.Text);
-                            Sum = Convert.ToDouble(txtYaJin.Text) - ((Convert.ToDouble(txtXiaoFei.Text) + num)- Convert.ToDouble(readerFangJia[2].ToString()) * Convert.ToDouble(reader[6].ToString()));
+                            Sum = Convert.ToDouble(txtYaJin.Text) - ((Convert.ToDouble(txtXiaoFei.Text) + num) - Convert.ToDouble(readerFangJia[2].ToString()) * Convert.ToDouble(reader[6].ToString()));
                         }
                         readerHuiYUan2.Close();
                     }
@@ -180,7 +180,10 @@ where memberuser.memberuser_shenfen = '{reader[2].ToString()}'
                     }
                     readerHuiYUan3.Close();
                 }
-                txtShiShou.Text = Sum.ToString();
+                //double dd =  Convert.ToDouble(txtYaJin.Text) - (Convert.ToDouble(txtJiFen.Text) - Convert.ToDouble(txtYiJiao.Text));
+                //     dd.ToString("0.00");
+                txtShiShou.Text = Sum.ToString("0.0");
+
             }
             reader.Close();
             //MessageBox.Show(Zong);
