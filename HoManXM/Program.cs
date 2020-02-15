@@ -20,7 +20,6 @@ namespace HoManXM
             //Application.Run(new Hosthoman());
             Application.Run(new DengLu());
             //  Application.Run(new Hua());
-           // Application.Run(new Ji());
 
 
         }

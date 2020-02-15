@@ -191,6 +191,12 @@
     <Compile Include="GuanLiYuan.Designer.cs">
       <DependentUpon>GuanLiYuan.cs</DependentUpon>
     </Compile>
+    <Compile Include="MoBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoBan.Designer.cs">
+      <DependentUpon>MoBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="RuZhu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -361,6 +367,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GuanLiYuan.resx">
       <DependentUpon>GuanLiYuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoBan.resx">
+      <DependentUpon>MoBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RuZhu.resx">
       <DependentUpon>RuZhu.cs</DependentUpon>

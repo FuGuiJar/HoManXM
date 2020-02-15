@@ -45,3 +45,4 @@ F:\酒店管理\HoManXM\HoManXM\bin\Debug\HoManXM.exe.manifest
 F:\酒店管理\HoManXM\HoManXM\bin\Debug\HoManXM.application
 F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.exe.manifest
 F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.application
+F:\酒店管理\HoManXM\HoManXM\obj\Debug\HoManXM.MoBan.resources
